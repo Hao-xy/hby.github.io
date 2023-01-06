@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./fonts/iconfont.js"></script>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>19001010313-黄炳源</title>
+    <link rel="stylesheet" href="./css/pub2.css">
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+   
+    <style>
+
+            
+        .tt2{
+            display: flex;
+            color: grey;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 6%;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        #dh{
+            text-align: center;
+            width: 25%;
+        }
+        #dh .iconfont{
+            font-size: 7vw;   
+        }
+        #dh p{
+            font-size: 3vw;
+        }
+
+        .tt2 .cur{
+            /* border-bottom: 5px solid #87CEFA;      */
+            color: rgb(101, 224, 255);
+            /* margin-bottom: -1px; */
+        }
+        
+        .ym{
+            height:38rem;
+            border-top:1px solid #F0F0F0;
+            font-size: 60px;
+            text-align: center;
+            display: none;
+            float: bottom;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="down">    
+        <div class="ym"style="display: block;"><object data="./shouye.html" width="100%" height="860vw" ></object></div>
+        <div class="ym" ><object data="./dongtai.html" width="100%" height="860vw" ></object></div>
+        <div class="ym"><object data="./xiaoxiye.html" width="100%" height="860vw" ></object></div>
+        <div class="ym"><object data="./wode.html" width="100%" height="860vw"></object></div>
+
+    
+        <div class="tt2">
+            <div class="cur" id="dh">
+                <span class="iconfont icon-shouye"></span>
+                <p>首页</p>
+            </div>
+            <div id="dh">
+                <span class="iconfont icon-dongtai"></span>
+                <p>发现</p>
+            </div>
+            <div id="dh">
+                <span class="iconfont icon-xiaoxi"></span>
+                <p>消息</p>
+            </div>
+            <div id="dh">
+                <span class="iconfont icon-wode2"></span>
+                <p>我的</p>
+            </div>
+        </div>
+    
+    </div>
+     
+    <script >
+        var down=document.querySelector(".down");
+        var tt2=down.getElementsByClassName("tt2")[0];
+        var div=tt2.querySelectorAll("div");
+        var ym=down.getElementsByClassName("ym");
+        console.log(down,tt2,div,ym);
+        for(let i=0;i<div.length;i++){
+            div[i].index=i;
+            div[i].onclick=function(){
+                for(let j=0;j<div.length;j++){
+                    div[j].classList.remove("cur");
+                    ym[j].style.display="none";
+                }
+                this.classList.add("cur");
+                ym[this.index].style.display="block";
+            }
+        }
+        
+    
+    </script>
+ 

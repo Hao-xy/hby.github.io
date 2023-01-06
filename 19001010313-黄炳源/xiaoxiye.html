@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./fonts/iconfont.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>19001010313-黄炳源</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <style>
+        .head{
+            display: flex;
+            width: 100%;
+            height: 10%;
+            background-color: #f0f0f0;
+            
+        }
+        .head h3{
+            padding-top:4%;
+            margin-bottom: 4%;
+            margin-left: 45%;
+            font-size: 100
+        }
+        .head span{
+            padding-top: 3.2%;
+            font-size: 120%;
+            margin-left: 35%;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5%;
+        }
+       
+        ul li{
+            text-align: center;
+            font-size: 60%;
+        } 
+        .xiaoxi img{
+            width: 50%;
+            margin-left: 25%;
+        }
+        .xiaoxi p{
+            margin-top:5%;
+            color: gray;
+            letter-spacing: 2px;
+        }
+        .zhongjian{
+            margin-left: 26%;
+            margin-top: 30%;
+        }
+        .zhongjian img{
+            width: 70%;
+        }
+        .zhongjian p{
+            font-size: 75%;
+            color: gray;
+            margin-left: 4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h3>消息</h3>
+        <span class="iconfont icon-shezhi"></span>
+    </div>
+    <ul class="xiaoxi">
+
+    </ul>
+    <div class="zhongjian">
+        <img src="./img/没有消息.jpg" alt="">
+        <p>暂时还没有收到私信消息哦</p>
+    </div>
+    <script>
+            var jarr=[{
+        img:"./img/回复.jpg",
+        p:"回复我的"
+    },
+    {
+        img:"./img/艾特.jpg",
+        p:"@我的"
+    },
+    {
+        img:"./img/点赞.jpg",
+        p:"点赞我的"
+    },{
+        img:"./img/通知.jpg",
+        p:"系统通知"
+    }]
+
+    var jlist=document.querySelector(".xiaoxi");
+    jarr.forEach((v,i)=>{
+        var nli=document.createElement("li");
+        nli.innerHTML=`
+        <img src="${v.img}">
+            <p>${v.p}</p>
+            `;
+            jlist.appendChild(nli);
+    })
+
+    </script>
+</body>
+</html>

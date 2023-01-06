@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+            <script src="./fonts/iconfont.js"></script>
+            <meta charset="UTF-8">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="format-detection" content="telephone=no">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+            <title>19001010313-黄炳源</title>
+            <link rel="stylesheet" href="/css/pub.css">
+            <link rel="stylesheet" href="/fonts/iconfont.css">
+            
+            <style>
+            .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        ul,body,p{
+
+            margin: 0;
+            padding: 0;
+            min-width: 5px;
+        }
+
+        #header{
+            display: flex;
+            line-height: 40px;
+            margin-top:3% ;
+            margin-left:3%;
+            background-color: #fff;
+            
+        }
+
+        #header button{
+            width: 100%;
+            height: auto;
+            color: rgba(209, 79, 32, 0.808);
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            font-size: 13px;
+            background-image:url(./img/公告背景.jpg);
+            background-size:100% 100%;
+        }
+        #header div{
+            flex-grow: 1;
+            background:rgba(170, 170, 170, 0.1);
+            color: grey;
+            border-radius: 10px;
+            display: flex;
+        }
+
+        #header div span{
+            font-size: 17px;
+            margin: 0 6px;
+            margin-top: 1px;
+           
+        }
+        #header input{
+            border: none;
+            outline: none;
+            background-color: rgba(0,0,0,0);
+            color: grey;
+            line-height: 30px;
+            flex-grow: 1;
+            border-radius:12px ;
+            font-size: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            border: none;
+            display: block;
+            
+        }
+        .slide{
+            overflow: hidden;
+            margin-top: 9px;
+        }
+        .slide>ul{
+            width: 500%;
+            height: auto;
+            display: flex;
+            animation: huang 15s infinite;
+            
+        }
+        .slide li{
+            width: 20%;
+            position: relative;
+            flex-grow: 1;
+        }
+        .slide img{
+            width: 100%;
+            height: auto;
+            
+        }
+        @keyframes huang{
+            10%{margin-left: 0;}
+            20%{margin-left: -100%;}
+            30%{margin-left: -100%;}
+            40%{margin-left: -200%;}
+            50%{margin-left: -200%;}
+            60%{margin-left: -300%;}
+            70%{margin-left: -300%;}
+            80%{margin-left: -400%;}
+            90%{margin-left: -400%;}
+            100%{margin-left:0;}
+        }
+        .gongjv ul{
+            display: flex;
+            line-height: 30px;
+            margin-top: 5%;
+             
+        }
+        .gongjv img{
+            width:90%;
+            margin-left: 2vw;
+        }
+        .gongjv p{
+            font-size: 15px;
+            text-align: center;
+        }
+      
+        .tt{
+            display: flex;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .tt span {
+            font-weight: bold;
+            margin-left: 2%;
+            font-size: 16px;
+        }
+        .gd{
+            margin-left: 15%;
+        }
+        .tt1{
+            display: flex;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+       
+        .tt1 span {
+            font-weight: bold;
+            margin-left: 0.8%;
+            font-size: 16px;
+            padding: 0;
+            line-height: 20px;
+        } 
+        .tt1 :first-child{
+            font-size: 27px;
+        }
+        .line{
+            width: 100%;
+            display: flex;
+            justify-content:space-around;
+            padding: 0;
+            margin: 0;
+        }
+        .line span{
+            background-color: #f0f0f0;
+            font-size:70%;
+            margin-left: 3%;
+            width: 50%;
+            line-height: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 3%;
+            padding-left: 3%;
+        }
+        .wanfa{
+            display: flex;
+            background-color: #f0f0f0;
+        }  
+        .wanfa img{
+            margin: 2%;
+            width: 9rem;
+            height: auto;
+        }
+        .right{
+            margin-left: 5%;
+            background-color: #f0f0f0;
+        }
+        .right h3{
+            width: 8rem;
+            height: 1.5rem;
+            font-size: 1rem;
+            margin-top: 5%;
+            text-align: center;
+            background-image: url(./img/角色攻略背景.png);
+            background-size:cover;
+
+        }
+        .right p{
+            text-align: left;
+            margin-top: 12%;
+           
+        }
+       
+        .hengxiang{
+            width: 100%;
+	        white-space: nowrap;
+	        /*设置横向滚动*/
+	        overflow-x: scroll;
+	        /*禁止纵向滚动*/
+	        overflow-y: hidden;
+	        text-align: justify;
+	        padding: 0px 1px;
+	        margin-bottom: 10px;
+	        box-sizing: border-box;
+        } 
+        .hengxiang li{
+            margin-right: 8%;
+        }
+        #popDiv{
+            display: none;
+            width: 90%;
+            height: 300px;
+            position:fixed;
+            top:-300px;
+            right:0;
+            left:25px;
+            bottom:0;
+            margin:auto;
+        }
+        /* 关闭按钮样式 */
+        #popDiv .close a {
+            text-decoration: none;
+            color: #2D2C3B;
+            
+        }
+        /* 弹出界面的关闭按钮 */
+        #popDiv .close{
+            text-align: left;
+            margin-right: 5px;
+            background-color: rgba(0,0,0,0);
+        }
+
+         #down{
+            width: 15rem;
+            height: 17rem;
+            font-size: 25px;  
+            background-image:url(./img/公告栏背景.jpg);
+            background-size:contain;
+            padding-top: 5%;
+        } 
+
+         #popDiv h3{
+           font-size: 20px;
+           margin-bottom: 5%;
+            font-weight: bold;
+            text-align: center;
+        }
+  
+       
+       
+        #popDiv p{
+            margin-left:5%;
+            margin-right: 5%;
+            text-align: left;
+            line-height: 150%;
+            text-indent: 2em;
+        }
+        
+        </style>
+</head>
+<body>
+    <header id="header">
+    <div>
+        <span class="iconfont icon-sousuo"></span>
+        <input type="text" placeholder="搜索观测枢">
+
+    </div>
+    <button onclick="popDiv();">公告栏</button>
+    <button>目录</button>
+    </header>
+
+    <div class="slide">
+        <ul>
+            <li>
+                <a href="#"><img src="./img/观测枢1.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/观测枢2.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/观测枢3.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/观测枢4.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./img/观测枢5.jpg"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="gongjv">
+        <ul>
+            <li>
+                <img src="./img/地图工具.png">
+                <p>地图工具</p>
+            </li>
+        
+        
+            <li>
+                <img src="./img/wiki.png">
+                <p>Wiki站</p>
+            </li>
+
+            <li>
+                <img src="./img/攻略合集.png">
+                <p>3.3攻略合集</p>
+            </li>
+            <li>
+                <img src="./img/角色攻略.png">
+                <p class="gd">角色攻略</p>
+            </li>
+        </ul>
+        <div class="gongjv">
+            <ul>
+                <li>
+                    <img src="./img/七圣召唤.png">
+                    <p>七圣召唤</p>
+                </li>
+            
+            
+                <li>
+                    <img src="./img/讨伐boss.png">
+                    <p>讨伐BOSS</p>
+                </li>
+    
+                <li>
+                    <img src="./img/活动集锦.png">
+                    <p>活动集锦</p>
+                </li>
+                <li>
+                    <img src="./img/更多.png">
+                    <p class="gd">更多</p>
+                </li>
+            </ul>
+    </div>
+    <div class="tt">
+        <span class="iconfont icon-huo"></span>
+        <span>热门推荐</span>
+        
+    </div> 
+<div>
+    <div class="line">
+       
+            <span>卡牌玩法详情</span>
+            <span>珐露珊攻略</span> 
+            
+    </div>
+    <div class="line">
+             <span>流浪者材料</span>  
+             <span>3.3攻略合集</span>
+    </div>
+    <div class="line">
+        <span>流浪者就业</span>  
+        <span>须弥开机指南</span>
+    </div>
+</div>
+
+
+<div id="popDiv">
+    <div class="close">
+        <span class="iconfont icon-guanbi " onclick="closePop()"></span>
+    </div>
+<div id="down">
+        <h3>公告栏</h3>
+        <p>原神观测枢是集攻略、资料库、试玩、同人为一体的玩家内容创作平台。目前观测枢wiki与攻略精选已上线</p>
+        <p>站内所有攻略、词条，均由旅行者编写</p>
+        <p>欢迎旅行者加入原神wiki交流群，一起参与wiki和攻略相关的交流和讨论。微信搜索公众号【原神观测枢】，更多精彩内容等着你哦</p>
+        <p>原神wiki交流群：xxxxxxx（开放加入）</p>
+        <p>原神wiki交流群2：xxxxxxx（开放加入）</p>
+        <p>原神wiki交流群3：xxxxxxx（开放加入）</p>
+</div>
+</div>
+<div class="tt1">
+    <span class="iconfont icon-icon-taikong16"></span>
+    <span>玩法探索</span>
+</div> 
+<ul class="hengxiang">
+</ul>
+
+<script>
+    var jarr=[{
+        img:"./img/玩法.jpg",
+        h3:"角色攻略",
+        p1:"流浪者",
+        p2:"荒泷一斗",
+        p3:"雷电将军"
+    },
+    {
+        img:"./img/wanfa2.jpg",
+        h3:"活动集锦",
+        p1:"风行迷踪",
+        p2:"秋津森夜试胆会",
+        p3:"迷城战线·沙城篇"
+    },
+    {
+        img:"./img/wanfa3.jpg",
+        h3:"讨伐BOSS",
+        p1:"正机之神",
+        p2:"无相之草",
+        p3:"兆载永劫龙兽"
+    }]
+
+    var jlist=document.querySelector(".hengxiang");
+    jarr.forEach((v,i)=>{
+        var nli=document.createElement("li");
+        nli.innerHTML=`
+        <li class="wanfa">
+            <img src="${v.img}" >
+            <div class="right">
+                <h3>${v.h3}</h3>
+                <p>${v.p1}</p>
+                <p>${v.p2}</p>
+                <p>${v.p3}</p>
+             </div>
+        </li>
+            `;
+            jlist.appendChild(nli);
+    })
+
+    function popDiv(){
+            // 获取div元素
+            var popBox = document.getElementById("popDiv");
+            var popLayer = document.getElementById("popLayer");
+
+            // 控制两个div的显示与隐藏
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        }
+
+        function closePop(){
+            // 获取弹出窗口元素
+            let popDiv = document.getElementById("popDiv");
+
+            popDiv.style.display = "none";
+        } 
+
+</script>
+</body>
+</html>

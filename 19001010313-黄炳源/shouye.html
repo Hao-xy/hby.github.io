@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./fonts/iconfont.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>19001010313-黄炳源</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+   
+    <style>
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            min-width: 5px;
+        }
+
+        .title{
+            width: 100%;
+            margin: 1px;
+            background-image:url(./img/蒙德背景.jpg);
+            background-size: 200%;
+        }
+        
+        .top{
+            display: flex;
+            color: #fff;
+            
+            justify-content:space-around;
+        }
+
+        .top .cur::after{
+            
+            content: ' ';
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+
+        }
+        .top span{
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 6vw;
+        }
+
+        .top .cur{
+            /* border-bottom: 5px solid #87CEFA;      */
+            font-weight: bold;
+            color: rgb(252, 248, 248);
+            /* margin-bottom: -1px; */
+        }
+        
+        .now{
+            color:aqua;
+        }
+        .tab{
+            width: 100%;
+            margin: 1px;
+            
+        }
+        .tt{
+            display: flex;
+            color: grey;
+            
+        }
+        .tt .cur::after{
+            content: ' ';
+            width: 15px;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 5px solid rgb(27, 120, 212);
+            border-radius: 2px; 
+            padding: 1px;
+        }
+        .tt span{
+            line-height: 20px;
+            font-size: 75%;
+            width: 14%;
+            text-align: center;
+            background-color: #fff;
+        }
+        .tt .cur{
+            /* border-bottom: 5px solid #87CEFA;      */
+            font-weight: bold;
+            color: #000;
+            /* margin-bottom: -1px; */
+        }
+        
+        .tc{
+            height: 80%;
+            border-top:1px solid #F0F0F0;
+            font-size: 60px;
+            text-align: center;
+            display: none;
+            margin-bottom: 0;
+        }
+
+
+        #header{
+            display: flex;
+            line-height: 30px;
+            margin-top:3px ;
+            
+        }
+        #header>span:last-child{
+            font-size: 13px;
+            padding: 0 5px;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-radius: 13px;
+            background:rgba(248, 248, 248, 0.116);
+            margin-left:10px ;
+            color: #fff;
+            line-height: 30px;
+        }
+        #header div{
+            flex-grow: 1;
+            background:rgba(0,0,0,.3);
+            color: #fff;
+            border-radius: 15px;
+            display: flex;
+            margin-left: 10px;
+        }
+
+        #header div span{
+            font-size: 12px;
+            margin: 0 6px;
+        }
+        #header input{
+            border: none;
+            outline: none;
+            background-color: rgba(0,0,0,0);
+            color: #fff;
+            line-height: 30px;
+            flex-grow: 1;
+            border-radius:12px ;
+            font-size: 12px;
+        }
+        .line{
+            width:100%;
+            overflow: hidden;
+            display: flex;
+            line-height: 200%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .line .icon{
+            width: 100%;
+            font-size: 50px;
+        }
+
+        ul,p{
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+           
+            
+        }
+        .line li{
+            width: 50%;
+            text-align: center;
+        }
+
+        .line p{
+            line-height: 10px;
+            font-size: 10px;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <div class="top">
+            <span class="cur"  >原神</span>
+            <span >大别野</span>
+            <span >崩坏：星穹轨道</span>
+            <span onclick="location='./pindao.html'" class="iconfont icon-zixun "></span>
+        </div> 
+        <header id="header">
+            
+            <div>
+                <span class="iconfont icon-sousuo"></span>
+                <input type="text" placeholder="七圣召唤专题站">
+                
+            </div>
+            <span class="iconfont icon-qiandao_ ">签到</span>
+        </header>
+        <ul class="line">
+            <li>
+                <svg class="icon" aria-hidden="true"  >
+                <use xlink:href="#icon-a-baoxiangpixel_huaban1"></use>
+                </svg>
+                <p>旅行工具</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-qiandao1"></use>
+                </svg>
+                <p>签到福利</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-lvhanggonglve"></use>
+                </svg>
+                <p>攻略合集</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-kapai"></use>
+                </svg>
+                <p>卡牌广场</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-baoxiang"></use>
+                </svg>
+                <p>卡牌专题站</p>
+            </li>
+        </ul>
+
+</div>
+<div class="tab">
+    <div class="tt">
+        <span class="cur">观测枢</span>
+        <span>发现</span>
+        <span>酒馆</span>
+        <span>攻略</span>
+        <span>同人图</span>
+        <span>COS</span>
+        <span>硬核</span>
+    </div>
+    <div class="tc" style="display: block;"><object data="./guanceshu.html" width="100%" height="700vw" ></object></div>
+    <div class="tc">2</div>
+    <div class="tc">3</div>
+    <div class="tc">4</div>
+    <div class="tc">5</div>
+    <div class="tc">6</div>
+    <div class="tc">7</div>
+</div>
+
+ 
+ 
+<script >
+    var tab=document.querySelector(".tab");
+    var tt=tab.getElementsByClassName("tt")[0];
+    var span=tt.querySelectorAll("span");
+    var tc=tab.getElementsByClassName("tc");
+    console.log(tab,tt,span,tc);
+    for(let i=0;i<span.length;i++){
+        span[i].index=i;
+        span[i].onclick=function(){
+            for(let j=0;j<span.length;j++){
+                span[j].classList.remove("cur");
+                tc[j].style.display="none";
+            }
+            this.classList.add("cur");
+            tc[this.index].style.display="block";
+        }
+    }
+    
+   
+</script>
+   
+</body>
+</html>

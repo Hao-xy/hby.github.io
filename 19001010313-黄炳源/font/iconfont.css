@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3698722 */
+  src: url('iconfont.woff2?t=1665476115405') format('woff2'),
+       url('iconfont.woff?t=1665476115405') format('woff'),
+       url('iconfont.ttf?t=1665476115405') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-html:before {
+  content: "\e600";
+}
+
+.icon-css:before {
+  content: "\e601";
+}
+
+.icon-emoji:before {
+  content: "\e64a";
+}
+
+.icon-homefill:before {
+  content: "\e6bb";
+}
+
+.icon-wechat:before {
+  content: "\e675";
+}
+
+.icon-IP:before {
+  content: "\e632";
+}
+
+.icon-qq:before {
+  content: "\e6fd";
+}
+
+.icon-wode:before {
+  content: "\e8a0";
+}
+
+.icon-wode1:before {
+  content: "\e62f";
+}
+
+.icon-sousuo:before {
+  content: "\e633";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-ningmeng:before {
+  content: "\e602";
+}
+
+.icon-sousuo1:before {
+  content: "\eafe";
+}
+
+.icon-userplus-fill:before {
+  content: "\e7d4";
+}
+
+.icon-user-fill:before {
+  content: "\e7d5";
+}
+
+.icon-ningmeng1:before {
+  content: "\e695";
+}
+
+.icon-wechat-:before {
+  content: "\e621";
+}
+
+.icon-check:before {
+  content: "\e938";
+}
+
+.icon-ningmeng2:before {
+  content: "\e61f";
+}
+

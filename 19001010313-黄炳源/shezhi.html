@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./fonts/iconfont.js"></script>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>19001010313-黄炳源</title>
+    <link rel="stylesheet" href="./css/pub2.css">
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <style>
+        .top{
+            display: flex;
+            padding-top: 3vw;
+            background-color: #f0f0f0;
+            padding-bottom: 3vw;
+        }
+        .top .iconfont{
+            font-size: 6vw;
+            font-weight: bold;
+            margin-left: 2%;
+            
+        }
+        .top h3{
+            font-size: 6vw;
+            margin-left: 35%;
+        }
+        .aq{
+            display: flex;
+            justify-content: space-between;
+            line-height: 13vw;
+            border-bottom: 3vw solid #f5f5f5;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 4.5vw;
+        }
+        .aq :last-child{
+            font-size: 4.5vw;
+            color: gray;
+        }
+        .line{
+            display: flex;
+            justify-content: space-between;
+            line-height: 13vw;
+            border-bottom: 1vw solid #f5f5f5;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-size: 4.5vw;
+        }
+        .line :last-child{
+            font-size: 4vw;
+            color: gray;
+        }
+        .tz{
+            border-bottom: 2vw solid #f5f5f5;
+        }
+        .wz span{
+            font-size: 4vw;
+            color: gray;
+        }
+        .tc{
+            line-height: 15vw;
+            text-align: center;
+            font-size: 6vw;
+            margin-bottom: 5vw;
+        }
+    </style>
+</head>
+<body>
+       <div class="top">
+            <span class="iconfont icon-xiangzuojiantou"onclick="location='./wode.html'"></span>
+            <h3>设置</h3>
+       </div>    
+       <div class="aq">
+            <span>通行证账号与安全</span>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+       </div>
+      <div class="tz">
+            <div class="line">
+                <span>新消息通知</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+            <div class="line">
+                <span>隐私设置</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+            <div class="line">
+                <span>屏蔽设置</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+      </div>
+    <div class="tz">
+        <div class="line">
+            <span>护眼模式</span>
+            <div class="wz">
+                <span >关闭</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+        </div>
+        <div class="line">
+            <span>视频自动播放</span>
+            <div class="wz">
+                <span>仅 WIFI</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+        </div>
+        <div class="line">
+            <span>动图自动播放</span>
+            <div class="wz">
+                <span>智能模式</span>
+                <span class="iconfont icon-xiangyoujiantou"></span>
+            </div>
+        </div>
+  </div>
+  <div class="tz">
+    <div class="line">
+        <span>关于米游社</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>清除缓存</span>
+        <div class="wz">
+            <span>94.4M</span>
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>建议与反馈</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>检查更新</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+</div>
+<div class="tz">
+    <div class="line">
+        <span>用户协议</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>隐私政策</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>个人信息手机清单</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+    <div class="line">
+        <span>第三方共享个人信息清单</span>
+        <div class="wz">
+            <span class="iconfont icon-xiangyoujiantou"></span>
+        </div>
+    </div>
+</div>
+    <div class="tc">
+         <span>退出登录</span>
+    </div>
+<script>
+    var tc=document.querySelector(".tc");
+    var span=tc.querySelectorAll("span")
+    console.log(tc,span);
+    tc.onclick = ()=>{
+            let res = confirm("您确定要退出登录吗？")
+            if(res==true){
+                window.location.href="./wode.html"
+            }
+        }
+        
+</script>
+</body>
+</html>

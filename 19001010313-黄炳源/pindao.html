@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./fonts/iconfont.js"></script>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>19001010313-黄炳源</title>
+    <link rel="stylesheet" href="./css/pub2.css">
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <style>
+    body{
+    margin: 0;
+    padding: 0;
+    min-width: 5px;
+    background-color: #f5f5f5;
+    }
+    #header{
+            width: 100%;
+            margin: 1px;
+            background-color: #f5f5f5;
+        }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px; 
+        text-align: center;
+        
+    }
+    .top span{
+        font-size: 100%;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .top :last-child{
+        font-weight: normal;
+        font-size: 15px;
+        margin-right: 3%;
+        color: #a9a9a9;
+    }
+    .tt{
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px; 
+        text-align: center;
+    }
+    .tt span{
+        margin: 5px;
+        font-size: 80%;
+        font-weight: bold;
+    }
+    .tt :last-child{
+        font-size: 15px;
+        color: gray;;
+        font-weight: normal;
+    }
+
+    img{
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{   
+         display: flex;
+         justify-content: space-between;
+         line-height: 90px;
+         margin-top: 3px; 
+         background-color: #fff;
+    }
+    .pic{
+         display: flex;
+
+    }
+    li img{
+        width:80px;
+        height:80px;
+    }
+    .txt span{
+       font-size: 20px;
+       color: #a9a9a9;
+    }
+    .name{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .tuijian{
+        background-color: #f5f5f5;
+        line-height: 40px;
+        font-size: 80%;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="top">
+            <span class="iconfont icon-xiangzuojiantou" onclick="location='./shouye.html'"></span>
+            <span>首页频道设置</span>
+            <span>确定</span>
+        </div>
+        <div class="tt">      
+            <span>我的频道</span>
+            <span>长按拖动排序</span>
+        </div>
+    </header>
+    <ul class="jlist">
+
+    </ul>
+    <div class="tuijian">      
+        <span>推荐频道</span>
+    </div>
+<ul>
+    <li class="wode">
+        <div class="pic">
+            <img src="./img/未定事件簿.jpg" >
+            <span class="name">未定事件簿</span>
+        </div>
+        <div class="txt">
+            <span class="iconfont icon-jia"></span>
+        </div>
+    </li >
+    <li class="wode">
+        <div class="pic">
+            <img src="./img/崩坏学园2.jpg" >
+            <span class="name">崩坏学园2</span>
+        </div>
+        <div class="txt">
+            <span class="iconfont icon-jia"></span>
+        </div>
+    </li >
+    <li class="wode">
+        <div class="pic">
+            <img src="./img/绝区零.jpg" >
+            <span class="name">绝区零</span>
+        </div>
+        <div class="txt">
+            <span class="iconfont icon-jia"></span>
+        </div>
+    </li >
+</ul>
+    <script>
+        var jarr=[{
+            img:"./img/原神.jpg",
+            name:"原神"
+        },
+        {
+            img:"./img/大别野.jpg",
+            name:"大别野"
+        },
+        {
+            img:"./img/崩坏星穹轨道.jpg",
+            name:"崩坏：星穹轨道"
+        },
+        {
+            img:"./img/崩坏三.jpg",
+            name:"崩坏三"
+        }]
+
+        var jlist=document.querySelector(".jlist");
+        jarr.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+            <div class="pic">
+            <img src="${v.img}" >
+            <span class="name">${v.name}</span>
+            </div>
+            <div class="txt">
+            <span class="iconfont icon-jian"></span>
+            <span class="iconfont icon-tuodong"></span>
+            </div>
+                `;
+                jlist.appendChild(nli);
+        })
+    </script>
+</body>
+</html>
